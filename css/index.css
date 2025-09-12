@@ -1,0 +1,227 @@
+
+:root{
+    --primaria: #2f3c6b;
+    --amarelo: #ffbc00;
+    --texto-principal: #333333;
+    --texto-secundario: #666666;
+    --fundo: #EBECF0;
+    --borda: #bbbcbf;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca", sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    background-color: var(--primaria);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    list-style-type: none;
+
+    height: 5em;
+    margin: 0px 2em;
+    gap: 2em;
+}
+nav ul li{
+    font-size: 1.5em;
+    color: var(--fundo);
+}
+nav ul a{
+    color: var(--fundo);
+    text-decoration: none;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: black;
+    height: 20vh;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--borda);
+    border-radius: 15px;
+    background-color: var(--fundo);
+    text-align: center;
+    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s;
+
+    height: 60vh;
+}
+.column:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+.column h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column p {
+    align-self: center;
+    margin: 2em;
+    font-size: 1.4em;
+}
+.faixa{
+    font-size: 3em;
+
+    width: 100%;
+    padding: 1.2em;
+}
+
+#section-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 60vh;
+}
+#section-1 h1{
+    font-size: 5.5vw;
+}
+#section-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-top: 1px solid var(--borda);
+
+    width: 100%;
+}
+#text-info-s2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: var(--primaria);
+    text-align: center;
+    border-radius: 15px;
+
+    width: 60vw;
+    height: 60vh;
+    padding: 1.5em;
+    margin: 3em;
+}
+#text-info-s2 h1{
+    align-self: center;
+    justify-self: center;
+    font-size: 2em;
+}
+#text-info-s2 p{
+    align-self: center;
+    align-content: center;
+    justify-self: center;
+    text-align: center;
+
+    background-color: var(--fundo);
+    border: 1px solid var(--borda);
+    border-radius: 15px;
+    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s;
+
+    font-size: 1.3em;
+    height: 100%;
+    width: 100%;
+}
+#text-info-s2 p:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+#section-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border-top: 1px solid var(--borda);
+
+    padding: 8em;
+}
+#section-4{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border-top: 1px solid var(--borda);
+    
+    text-align: center;
+    background-color: var(--amarelo);
+}
+#album1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+    padding: 3em;
+}
+#album2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    padding: 3em;
+}
+#card{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+
+    background-color: var(--fundo);
+    border-radius: 15px;
+    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s;
+
+    height: 400px;
+    width: 300px;
+    padding: 2em;
+}
+#card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+#card img{
+    background-color: black;
+    border-radius: 100%;
+
+    width: 10em;
+    height: 10em;
+    margin-bottom: 1.5em;
+}
+#card h1{
+    font-size: 1.5em;
+}
+#card h2 {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+#card a {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+#contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+
+    color: var(--texto-secundario);
+}
+#contatos ul {
+    font-size: 1.5em;
+    font-weight: 300;
+    list-style-type: none;
+}
+#contatos a{
+    text-decoration: none;
+    color: var(--texto-secundario);
+}
