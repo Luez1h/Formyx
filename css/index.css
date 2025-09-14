@@ -20,9 +20,9 @@ nav{
     background-color: var(--primaria);
 }
 nav img{
-    border-radius: 100%;
-    height: 65px;
-    width: 65px;
+    border-radius: 100% !important;
+    height: 65px !important;
+    width: 65px !important;
 }
 nav ul{
     display: flex;
@@ -229,4 +229,5 @@ footer{
 #contatos a{
     text-decoration: none;
     color: var(--texto-secundario);
+
 }
